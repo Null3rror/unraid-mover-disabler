@@ -1,7 +1,7 @@
 # unraid-mover-disabler
 Since Unraid doesn't retain modifications between reboots, you have to disable the mover after each reboot.
 ## Command
-To do that automatically upon boot, simply add this: 
+To disable the Unraid's mover completely upon each boot, simply add: 
 <br><br>
 `sed -i '/^start()/a echo "Mover disabled!" && exit 0' "$(which mover)"` 
 <br><br>
