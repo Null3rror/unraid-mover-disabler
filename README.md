@@ -6,6 +6,7 @@ To disable the Unraid's mover completely upon each boot, simply add:
 `sed -i '/^start()/a echo "Mover disabled!" && exit 0' "$(which mover)"` 
 <br><br>
 to the end of your `/boot/config/go` to disable Unraid's mover.
+(This file gets executed upon booting)
 
 ---
 At the end, your `/boot/config/go` should look like something like this:
